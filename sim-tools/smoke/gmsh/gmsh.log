@@ -1,0 +1,131 @@
+Info    : Running 'gmsh pcv_adapter.step -3 -format msh4 -clmax 1.5 -o pcv_adapter.msh' [Gmsh 4.14.0-git, 1 node, max. 1 thread]
+Info    : Started on Fri Oct  9 16:26:56 2026
+Info    : Reading 'pcv_adapter.step'...
+Info    :  - Label 'Shapes/COMPOUND' (3D)
+Info    : Done reading 'pcv_adapter.step'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Circle)
+Info    : [ 10%] Meshing curve 2 (Circle)
+Info    : [ 10%] Meshing curve 3 (BSpline)
+Info    : [ 10%] Meshing curve 4 (BSpline)
+Info    : [ 10%] Meshing curve 5 (BSpline)
+Info    : [ 20%] Meshing curve 6 (Circle)
+Info    : [ 20%] Meshing curve 7 (Line)
+Info    : [ 20%] Meshing curve 8 (BSpline)
+Info    : [ 20%] Meshing curve 9 (Circle)
+Info    : [ 20%] Meshing curve 10 (Line)
+Info    : [ 30%] Meshing curve 11 (BSpline)
+Info    : [ 30%] Meshing curve 12 (BSpline)
+Info    : [ 30%] Meshing curve 13 (Circle)
+Info    : [ 30%] Meshing curve 14 (Circle)
+Info    : [ 40%] Meshing curve 15 (Circle)
+Info    : [ 40%] Meshing curve 16 (Circle)
+Info    : [ 40%] Meshing curve 17 (Line)
+Info    : [ 40%] Meshing curve 18 (Circle)
+Info    : [ 40%] Meshing curve 19 (Circle)
+Info    : [ 50%] Meshing curve 20 (Line)
+Info    : [ 50%] Meshing curve 21 (Circle)
+Info    : [ 50%] Meshing curve 22 (Circle)
+Info    : [ 50%] Meshing curve 23 (Line)
+Info    : [ 60%] Meshing curve 24 (Circle)
+Info    : [ 60%] Meshing curve 25 (Circle)
+Info    : [ 60%] Meshing curve 26 (Line)
+Info    : [ 60%] Meshing curve 27 (Circle)
+Info    : [ 60%] Meshing curve 28 (Circle)
+Info    : [ 70%] Meshing curve 29 (Line)
+Info    : [ 70%] Meshing curve 30 (Circle)
+Info    : [ 70%] Meshing curve 31 (Circle)
+Info    : [ 70%] Meshing curve 32 (Line)
+Info    : [ 70%] Meshing curve 33 (Line)
+Info    : [ 80%] Meshing curve 34 (Circle)
+Info    : [ 80%] Meshing curve 35 (Circle)
+Info    : [ 80%] Meshing curve 36 (Circle)
+Info    : [ 80%] Meshing curve 37 (Line)
+Info    : [ 90%] Meshing curve 38 (Circle)
+Info    : [ 90%] Meshing curve 39 (Line)
+Info    : [ 90%] Meshing curve 40 (Circle)
+Info    : [ 90%] Meshing curve 41 (Line)
+Info    : [ 90%] Meshing curve 42 (Circle)
+Info    : [100%] Meshing curve 43 (Line)
+Info    : [100%] Meshing curve 44 (Circle)
+Info    : [100%] Meshing curve 45 (Circle)
+Info    : [100%] Meshing curve 46 (Line)
+Info    : Done meshing 1D (Wall 0.0234377s, CPU 0.014287s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Sphere, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 2 (BSpline surface, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 4 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 5 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 6 (BSpline surface, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 7 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 8 (Sphere, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 9 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 10 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 11 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 12 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 13 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 14 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 15 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 16 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 17 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 18 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 19 (Cone, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 20 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 21 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 22 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 23 (Cone, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 24 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 25 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 26 (Cone, Frontal-Delaunay)
+Info    : [100%] Meshing surface 27 (Cone, Frontal-Delaunay)
+Info    : [100%] Meshing surface 28 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.137892s, CPU 0.130467s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Tetrahedrizing 3808 nodes...
+Info    : Done tetrahedrizing 3816 nodes (Wall 0.0319992s, CPU 0.031998s)
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    : Done reconstructing mesh (Wall 0.0725591s, CPU 0.065665s)
+Info    : Found volume 1
+Info    : It. 0 - 0 nodes created - worst tet radius 1.3145 (nodes removed 0 0)
+Info    : 3D refinement terminated (4114 nodes total):
+Info    :  - 4 Delaunay cavities modified for star shapeness
+Info    :  - 0 nodes could not be inserted
+Info    :  - 13499 tetrahedra created in 0.00861186 sec. (1567489 tets/s)
+Info    : 0 node relocations
+Info    : Done meshing 3D (Wall 0.135835s, CPU 0.126028s)
+Info    : Optimizing mesh...
+Info    : Optimizing volume 1
+Info    : Optimization starts (volume = 7302.35) with worst = 0.013707 / average = 0.731964:
+Info    : 0.00 < quality < 0.10 :        33 elements
+Info    : 0.10 < quality < 0.20 :        73 elements
+Info    : 0.20 < quality < 0.30 :       139 elements
+Info    : 0.30 < quality < 0.40 :       421 elements
+Info    : 0.40 < quality < 0.50 :       609 elements
+Info    : 0.50 < quality < 0.60 :       940 elements
+Info    : 0.60 < quality < 0.70 :      1933 elements
+Info    : 0.70 < quality < 0.80 :      4528 elements
+Info    : 0.80 < quality < 0.90 :      3435 elements
+Info    : 0.90 < quality < 1.00 :      1388 elements
+Info    : 243 edge swaps, 0 node relocations (volume = 7302.35): worst = 0.184006 / average = 0.742 (Wall 0.00418409s, CPU 0.00271s)
+Info    : 247 edge swaps, 0 node relocations (volume = 7302.35): worst = 0.300295 / average = 0.741979 (Wall 0.004883s, CPU 0.003307s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         0 elements
+Info    : 0.20 < quality < 0.30 :         0 elements
+Info    : 0.30 < quality < 0.40 :       409 elements
+Info    : 0.40 < quality < 0.50 :       590 elements
+Info    : 0.50 < quality < 0.60 :       918 elements
+Info    : 0.60 < quality < 0.70 :      2052 elements
+Info    : 0.70 < quality < 0.80 :      4513 elements
+Info    : 0.80 < quality < 0.90 :      3428 elements
+Info    : 0.90 < quality < 1.00 :      1385 elements
+Info    : Done optimizing mesh (Wall 0.01246s, CPU 0.009487s)
+Info    : 4114 nodes 22106 elements
+Info    : Writing 'pcv_adapter.msh'...
+Info    : Done writing 'pcv_adapter.msh'
+Info    : Stopped on Fri Oct  9 16:26:56 2026 (From start: Wall 0.397753s, CPU 0.319893s)

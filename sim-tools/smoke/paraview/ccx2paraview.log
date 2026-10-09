@@ -1,0 +1,6 @@
+INFO: Reading beam_u.frd
+INFO: 1025 nodes
+INFO: 640 cells
+INFO: 1 time increment(s)
+INFO: Step 1, time 1.0, U, 3 components, 1025 values
+INFO: Writing beam_u.vtu
