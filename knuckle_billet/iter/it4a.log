@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/knuckle_billet/iter/../mesh_step.py", line 7, in <module>
+    gmsh.model.mesh.generate(3)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/workspace/kbvenv/lib/python3.13/site-packages/gmsh.py", line 2189, in generate
+    raise Exception(logger.getLastError())
+Exception: HXT 3D mesh failed
+PLC Error:  A segment and a facet intersect at point (20.1382,-65.587,82.1459).
+  Segment: [14585,3411] #-1 (0)
+  Facet:   [14641,341,14656] #136
