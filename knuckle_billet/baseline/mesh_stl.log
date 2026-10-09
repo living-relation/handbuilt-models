@@ -1,0 +1,11 @@
+MeshFix could not fix everything
+fixed vol 1015515.152846431 watertight True
+Warning : Poor input mesh quality (min gamma = 0.000804048) for computing parametrization
+Error   : Wrong topology of boundary mesh for parametrization
+Traceback (most recent call last):
+  File "/workspace/knuckle_billet/mesh_stl.py", line 10, in <module>
+    gmsh.model.mesh.createGeometry()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspace/kbvenv/lib/python3.13/site-packages/gmsh.py", line 5096, in createGeometry
+    raise Exception(logger.getLastError())
+Exception: Wrong topology of boundary mesh for parametrization
