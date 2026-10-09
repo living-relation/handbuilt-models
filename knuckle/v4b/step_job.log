@@ -1,0 +1,15 @@
+  +plate_low      plain  solids=1 valid=True
+  +plate_low      plain  solids=1 valid=True
+  +back_web       plain  solids=1 valid=True
+  +left_ear       plain  solids=1 valid=True
+  +plate_high     plain  solids=1 valid=True
+  +low_arm_end    plain  solids=1 valid=True
+  +low_arm        plain  solids=1 valid=True
+  +top_arm        plain  solids=1 valid=True
+  +left_web       plain  solids=1 valid=True
+  +right_web      plain  solids=1 valid=True
+  +left_eye       plain  solids=1 valid=True
+  +right_eye      plain  solids=1 valid=True
+  +top_eye        plain  solids=1 valid=True
+  cut 13 features              solids=1 valid=True
+valid True solids 1 bbox bbox: -115.54089675416505 <= x <= 84.0025472371563, -165.9744372031477 <= y <= 164.1000001, 0.0 <= z <= 152.70265916260138 65s
