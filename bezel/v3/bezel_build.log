@@ -1,0 +1,35 @@
+plate 91617
+  +back wall      vol    19842  -> solids 1 valid True OK
+  +hood post 1    vol     4230  -> solids 1 valid True OK
+  +hood post 2    vol     4950  -> solids 1 valid True OK
+  +hood           vol    26334  -> solids 1 valid True OK
+  +front rim      vol    17063  -> solids 1 valid True OK
+  +skirt drop     vol    17904  -> solids 1 valid True OK
+  +skirt ledge    vol     4911  -> solids 1 valid True OK
+  +skirt lip      vol     3918  -> solids 1 valid True OK
+  +clip 1         vol      528  -> solids 1 valid True OK
+  +clip 2         vol      528  -> solids 1 valid True OK
+  +clip 3         vol      528  -> solids 1 valid True OK
+  +collar 1       vol     5598  -> solids 1 valid True OK
+  +collar 2       vol     4843  -> solids 1 valid True OK
+  +collar 3       vol     4843  -> solids 1 valid True OK
+  +rib 1          vol      148  -> solids 1 valid True OK
+  +rib 2          vol      148  -> solids 1 valid True OK
+  +rib 3          vol      148  -> solids 1 valid True OK
+  +rib 4          vol      148  -> solids 1 valid True OK
+  +signal housing 1 vol      333  -> solids 1 valid True OK
+  +signal housing 2 vol      375  -> solids 1 valid True OK
+  -gauge 1 bore   -> solids 1 valid True OK
+  -gauge 1 open   -> solids 1 valid True OK
+  -gauge 2 bore   -> solids 1 valid True OK
+  -gauge 2 open   -> solids 1 valid True OK
+  -gauge 3 bore   -> solids 1 valid True OK
+  -gauge 3 open   -> solids 1 valid True OK
+  -hole d9.0      -> solids 1 valid True OK
+  -hole d9.0      -> solids 1 valid True OK
+  -end window 1   -> solids 1 valid True OK
+  -end window 2   -> solids 1 valid True OK
+  -arrow 1        -> solids 1 valid True OK
+  -arrow 2        -> solids 1 valid True OK
+  gauge top-edge fillet OK
+RESULT valid True solids 1 vol 127250 bbox bbox: 5.0 <= x <= 147.31574669033768, 2.9999999 <= y <= 402.0000001, -25.5 <= z <= 33.0000001 65s
