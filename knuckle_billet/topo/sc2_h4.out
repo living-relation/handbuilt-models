@@ -1,0 +1,12 @@
+grid 53x85x40 h=4.0: active 29406, non-design 6021, design 23385  (29s)
+target 2.0 kg -> design volfrac 0.218 (non-design 1.083 kg, full envelope 5.288 kg)
+node sets {'SEAT': 522, 'STRUTO': 104, 'STRUTI': 120, 'EYEL': 210, 'EYER': 203, 'EYET': 347, 'EAR1': 66, 'EAR2': 54}
+setup done 29s, dofs 111011
+stress-measure elements 23423 of 29406
+ev   1 b1 vol 0.5232 mass(>0.5) 2.072 kg  smax/251 [0.43, 1.58, 1.14, 1.98, 0.21]  33s
+ev   2 b1 vol 0.5233 mass(>0.5) 4.412 kg  smax/251 [0.43, 1.42, 1.12, 1.79, 0.19]  37s
+ev   3 b1 vol 0.5240 mass(>0.5) 4.451 kg  smax/251 [0.43, 1.18, 0.98, 1.47, 0.16]  42s
+ev   4 b1 vol 0.5319 mass(>0.5) 4.871 kg  smax/251 [0.4, 0.69, 0.89, 0.98, 0.15]  46s
+ev   5 b1 vol 0.5317 mass(>0.5) 4.319 kg  smax/251 [0.39, 0.67, 0.77, 0.8, 0.15]  50s
+ev   6 b1 vol 0.5308 mass(>0.5) 3.963 kg  smax/251 [0.39, 0.67, 0.78, 0.75, 0.14]  56s
+ev   7 b1 vol 0.5194 mass(>0.5) 2.651 kg  smax/251 [0.39, 0.67, 0.86, 0.66, 0.14]  60s
