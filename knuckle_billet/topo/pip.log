@@ -1,0 +1,87 @@
+ERROR: Exception:
+Traceback (most recent call last):
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py", line 899, in _error_catcher
+    yield
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py", line 1016, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py", line 999, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+           ~~~~~~~~~~~~~^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/cachecontrol/filewrapper.py", line 100, in read
+    data: bytes = self.__fp.read(amt)
+                  ~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/http/client.py", line 484, in read
+    s = self.fp.read(amt)
+  File "/usr/lib/python3.14/socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.14/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ssl.SSLError: [SSL: RECORD_LAYER_FAILURE] record layer failure (_ssl.c:2711)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/cli/base_command.py", line 109, in _run_wrapper
+    status = _inner_run()
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/cli/base_command.py", line 102, in _inner_run
+    return self.run(options, args)
+           ~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/cli/req_command.py", line 106, in wrapper
+    return func(self, options, args)
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/commands/install.py", line 505, in run
+    preparer.prepare_linked_requirements_more(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        requirement_set.requirements.values()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/operations/prepare.py", line 691, in prepare_linked_requirements_more
+    self._complete_partial_requirements(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        partially_downloaded_reqs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        parallel_builds=parallel_builds,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/operations/prepare.py", line 600, in _complete_partial_requirements
+    for link, (filepath, _) in batch_download:
+                               ^^^^^^^^^^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/network/download.py", line 202, in batch
+    filepath, content_type = self(link, location)
+                             ~~~~^^^^^^^^^^^^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/network/download.py", line 215, in __call__
+    self._process_response(download, resp)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/network/download.py", line 232, in _process_response
+    for chunk in chunks:
+                 ^^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_internal/network/utils.py", line 80, in response_chunks
+    for chunk in response.raw.stream(
+                 ~~~~~~~~~~~~~~~~~~~^
+        chunk_size,
+        ^^^^^^^^^^^
+    ...<22 lines>...
+        decode_content=False,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py", line 1261, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py", line 1104, in read
+    data = self._raw_read(amt)
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py", line 1015, in _raw_read
+    with self._error_catcher():
+         ~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/home/daniel/simvenv/lib/python3.14/site-packages/pip/_vendor/urllib3/response.py", line 908, in _error_catcher
+    raise SSLError(e) from e
+pip._vendor.urllib3.exceptions.SSLError: [SSL: RECORD_LAYER_FAILURE] record layer failure (_ssl.c:2711)
