@@ -512,7 +512,7 @@ def _refine(S, ok, bad, closed, L, tol, step_min, max_sections, tag, res):
         if span <= 2 * step_min or any(u0 < b[0] < u1 or u0 < b[0] + 1 < u1 for b in bad): i += 1; continue
         um = 0.5 * (u0 + u1); n_probe += 1
         s, w, why = S.one(um, S.r if abs(s0.get("r", S.r) - S.r) < 1e-9 else s0["r"])
-        if s is None: bad.append((um, "refinement probe: " + why)); i += 1; continue
+        if s is None: i += 1; continue  # failed probe: leave interval coarse; do not count as a skipped section
         if strip_deviation(s0, s1, s) > tol:
             ok.insert(i + 1, (um, s, w))                                 # re-check the left half next
         else: i += 1
@@ -732,7 +732,10 @@ def fuse_blend(base, res, step_path=None, tol=0.1, log=print):
     if volume_verdict(added, res.expected_mm3, tol) != "PASS" and any(f is not None for f in fb):
         rp = [f if f is not None else p for p, f in zip(res.pieces, fb)]
         part2, used2, _ = run(rp); added2, vrep2 = added_volume(base, used2, part2)
-        if volume_verdict(added2, res.expected_mm3, tol) == "PASS" or abs(added2 / res.expected_mm3 - 1) < abs(added / res.expected_mm3 - 1):
+        # expected_mm3 can be 0 (no expected volume): never divide by it; prefer the closer absolute added volume.
+        closer = (abs(added2 / res.expected_mm3 - 1) < abs(added / res.expected_mm3 - 1)
+                  if res.expected_mm3 else abs(added2) < abs(added))
+        if volume_verdict(added2, res.expected_mm3, tol) == "PASS" or closer:
             notes.append("volume check failed with the smooth lofts (added %.1f of %.1f mm3): redone with the ruled ones" % (added, res.expected_mm3))
             part, used, added, vrep = part2, used2, added2, vrep2
     res.used = used                                                     # the pieces actually fused (smooth or ruled)
